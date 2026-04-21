@@ -1,0 +1,3 @@
+const API_BASE = 'http://localhost:3000/api/auth';
+export const signupUser = async (username, email, password) => { const res = await fetch(`${API_BASE}/signup`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ username, email, password }) }); return await res.json(); };
+export const loginUser = async (email, password) => { const res = await fetch(`${API_BASE}/login`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ email, password }) }); return await res.json(); };

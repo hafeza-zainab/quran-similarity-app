@@ -1,0 +1,31 @@
+.search-container { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); border: 1px solid #E5E7EB; }
+.search-form { display: flex; gap: 15px; margin-bottom: 15px; }
+.searchable-wrapper { position: relative; flex: 1; }
+.searchable-wrapper input { width: 100%; padding: 12px 16px; font-size: 14px; border: 2px solid #E5E7EB; border-radius: 8px; background: #F9FAFB; transition: all 0.2s; font-family: 'Inter', sans-serif; }
+.searchable-wrapper input:focus { outline: none; border-color: #F2C94C; background: white; box-shadow: 0 0 0 3px rgba(242, 201, 76, 0.2); }
+.surah-select { padding: 12px 16px; font-size: 14px; border: 2px solid #E5E7EB; border-radius: 8px; background: #F9FAFB; transition: all 0.2s; font-family: 'Inter', sans-serif; flex: 1; cursor: pointer; }
+.surah-select:focus { outline: none; border-color: #F2C94C; background: white; box-shadow: 0 0 0 3px rgba(242, 201, 76, 0.2); }
+.search-container button { padding: 12px 30px; font-size: 15px; font-weight: 700; border-radius: 8px; background: #004D40; color: white; border: none; cursor: pointer; transition: 0.2s; }
+.search-container button:hover { background: #00382E; }
+.search-container button:disabled { background: #D1D5DB; cursor: not-allowed; }
+.filters { display: flex; gap: 15px; align-items: center; font-size: 14px; padding-top: 15px; border-top: 1px solid #F3F4F6; }
+.filters select { padding: 8px 12px; border: 1px solid #E5E7EB; border-radius: 6px; background: white; color: #374151; }
+/* User Input Error Message */
+.ui-error-message {
+    background-color: #FEF2F2;
+    color: #991B1B;
+    border: 1px solid #FECACA;
+    padding: 12px 15px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    animation: shake 0.4s ease-in-out; /* Little shake animation for emphasis */
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+}

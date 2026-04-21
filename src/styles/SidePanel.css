@@ -1,0 +1,66 @@
+.side-panel { background: white; border-radius: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); border: 1px solid #E5E7EB; height: fit-content; position: sticky; top: 95px; }
+.side-panel-empty { padding: 40px 20px; color: #9CA3AF; font-style: italic; text-align: center; border-radius: 12px; background: white; border: 1px dashed #E5E7EB; }
+.panel-header { background: #004D40; color: white; padding: 15px 20px; font-weight: 700; font-size: 16px; border-radius: 12px 12px 0 0; }
+.panel-body { padding: 20px; }
+.tip-context { background: #FFFBEB; border-left: 4px solid #F2C94C; padding: 15px; border-radius: 4px; margin-bottom: 25px; }
+.tip-context strong { color: #004D40; display: block; margin-bottom: 5px;}
+.highlight-mode { margin: 0; color: #6B7280; font-size: 13px; }
+.highlight-mode span { color: #004D40; font-weight: 700; }
+.tips-list h4 { margin-bottom: 10px; color: #374151; font-size: 15px; }
+.tips-list ul { padding-left: 20px; line-height: 1.8; color: #4B5563; font-size: 14px; }
+.tips-list li { margin-bottom: 8px; }
+/* Context Ayahs Styling */
+.context-container {
+    border: 1px solid #E5E7EB;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background: #F9FAFB;
+}
+.context-ayah {
+    padding: 15px;
+    border-bottom: 1px solid #E5E7EB;
+}
+.context-ayah:last-child {
+    border-bottom: none;
+}
+.context-label {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #6B7280;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+}
+.arabic-text-sm {
+    font-size: 20px;
+    font-family: 'Amiri', serif;
+    line-height: 2;
+    color: #374151;
+    text-align: right;
+}
+/* Make previous/next slightly faded to show focus */
+.context-ayah.prev .arabic-text-sm,
+.context-ayah.next .arabic-text-sm {
+    color: #6B7280;
+}
+/* Make the main selected ayah pop */
+.context-ayah.main {
+    background: white;
+    border-left: 4px solid #004D40;
+    border-right: 4px solid #004D40;
+    margin: 0 -15px; /* Pull it out slightly */
+    padding: 15px 19px;
+}
+.context-ayah.main .arabic-text-sm {
+    font-size: 24px; /* Bigger for selected */
+    color: #111827;
+    font-weight: bold;
+}
+.loading-text {
+    text-align: center;
+    padding: 20px;
+    color: #9CA3AF;
+    font-size: 13px;
+    font-style: italic;
+}
